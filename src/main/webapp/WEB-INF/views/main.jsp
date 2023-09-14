@@ -17,7 +17,6 @@
 <style type="text/css">
 	#header { /* Header */
 		padding-top: 3em;
-		padding-bottom: 2em;
 	}
 	.icons { /* 이름, 로그아웃 */
 		height: 20px;
@@ -86,7 +85,7 @@
 	#menu ul li { /* Sidebar의 menu들 */
 		font-size: 16px;
 	}
-	img { /* 이미지들 */
+	.img { /* 행사 이미지들 */
 		height: 250px;
 		vertical-align: middle;
 		margin: 5px;
@@ -102,8 +101,13 @@
 			<div class="inner">
 				<!-- Header -->
 				<header id="header">
-					<a href="main" class="logo" style="padding-top: 80px; font-size: 20px;"><strong>더조은</strong> 상사</a>
-					<div align="right">
+					<div style="padding-top: 9em;">
+						<a href="main" class="logo" style="font-size: 20px;"><strong style="font-size: 25px;">더조은</strong> 상사</a>
+					</div>
+					<div style="text-align: center; padding-top: 1em;">
+						<img alt="로고사진" src="images/logo2.png" style="max-width: 250px; opacity: 70%; /* margin-left: 3em; */">
+					</div>
+					<div align="right" style="padding-top: 2em;">
 						<div style="display: inline-block; padding: 0px; margin: 0px;">
 							<ul class="icons">
 								<li>
@@ -138,7 +142,7 @@
 				<!-- Banner -->
 				<section id="banner">
 					<div align="center" class="content">
-						<div align="left" style="display: inline-block; width: 50%;">
+						<div align="left" style="display: inline-block; width: 40%;">
 							<table class="table" style="height: 240px;">
 								<tr>
 									<th colspan="3" style="padding: 13px; text-align: left; height: 57.19px;">
@@ -190,7 +194,7 @@
 								</c:if>
 							</table>
 						</div>
-						<div align="right" style="display: inline-block; width: 30%; margin-left: 50px; vertical-align: top;">
+						<div align="right" style="display: inline-block; width: 40%; margin-left: 50px; vertical-align: top;">
 							<table class="table" style="height: 240px;">
 								<tr>
 									<th colspan="2" style="font-size: 18px; padding: 13px; text-align: left;">
@@ -250,7 +254,7 @@
 							</table>
 						</div>
 						<br/>
-						<div align="left" style="display: inline-block; width: 50%;">
+						<div align="left" style="display: inline-block; width: 40%;">
 							<table class="table" style="height: 240px;">
 								<tr>
 									<th colspan="3" style="padding: 13px; text-align: left; height: 57.19px;">
@@ -287,7 +291,7 @@
 								</c:if>
 							</table>
 						</div>
-						<div align="left" style="display: inline-block; width: 30%; margin-left: 50px;">
+						<div align="left" style="display: inline-block; width: 40%; margin-left: 50px;">
 							<table class="table" style="height: 240px;">
 								<tr>
 									<th colspan="3" style="padding: 13px; text-align: left; height: 57.19px;">
@@ -342,13 +346,13 @@
 						<div style="width: 60em; margin-bottom: 100px; font-size: 18px; display: inline-block;">
 							<b style="text-align: center; color: #3d4449;">행사 사진 </b><br/>
 							<div style="display: inline-block;">
-								<img src="images/1.jpg"/>
+								<img class="img" src="images/1.jpg"/>
 							</div>
 							<div style="display: inline-block;">
-								<img src="images/2.jpg"/>
+								<img class="img" src="images/2.jpg"/>
 							</div>
 							<div style="display: inline-block;">
-								<img src="images/3.jpg"/>
+								<img class="img" src="images/3.jpg"/>
 							</div>
 						</div>
 						<a onclick="endClick()" style="font-size: 40px; color: #f56a6a; text-decoration: none; border-bottom: none; cursor: pointer; display: inline-block;">▶</a>

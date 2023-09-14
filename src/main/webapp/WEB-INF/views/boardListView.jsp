@@ -127,7 +127,7 @@
 					<c:if test="${slist.size() != 0}">
 						<c:forEach var="no" items="${slist}" end="2">
 							<c:if test="${no.gubun eq '주요공지'}">
-								<tr>
+								<tr style="background-color: #F7F7F7;">
 									<td align="center">${no.idx}</td>
 									<td align="center" style="color: red;">
 										<span style="background-color: #ff5858; color: white; padding: 0.4em; border-radius: 10px; font-size: 14px;">${no.gubun}</span>

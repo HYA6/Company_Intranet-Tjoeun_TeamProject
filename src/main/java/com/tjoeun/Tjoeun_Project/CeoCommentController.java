@@ -35,7 +35,7 @@ public class CeoCommentController {
 		
 		// 코멘트를 달 결재글 1건 얻어오는 메소드 호출
 		CeoVO co = mapper.selectByIdxCeoComment(ceoVO);
-		logger.info("{}", co);
+		logger.info("co: {}", co);
 		// 코멘트를 달 결재글 1건이 저장된 VO와 목록창의 현재 페이지, 엔터 지정
 		model.addAttribute("co", co);
 		model.addAttribute("currentPage", request.getParameter("currentPage"));
@@ -48,7 +48,10 @@ public class CeoCommentController {
 	@RequestMapping("/CeoUpdate")
 	public String CeoUpdate(HttpServletRequest request, Model model, CeoVO ceoVO) {
 		logger.info("CeoCommentController 클래스의 CeoUpdate() 메소드 실행");
-		model.addAttribute("co", ceoVO);
+		CeoCommentDAO mapper = sqlSession.getMapper(CeoCommentDAO.class);
+		CeoVO co = mapper.selectByIdxCeoComment(ceoVO);
+		logger.info("co: {}", co);
+		model.addAttribute("co", co);
 		model.addAttribute("currentPage", request.getParameter("currentPage"));
 		model.addAttribute("enter", "\r\n");
 		return "CeoUpdate";

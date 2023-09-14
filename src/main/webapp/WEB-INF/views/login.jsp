@@ -21,8 +21,12 @@
 //	out.println(error);
 %>
 
-<header></header>
+<header>
+</header>
 <form action="loginOK" method="post">
+	<div style="width: 100%; height: 300px; line-height: 100px; text-align: center">
+		<img alt="로고사진" src="images/logo.png" style="width: 100%; max-width: 260px; ">
+	</div>
 	<table cellpadding="5" cellspacing="0">
 		<tr>
 			<th class="th"><label for="cnum">사원번호</label></th>
@@ -38,7 +42,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td id="result" colspan="2" align="center">
+			<td id="result" colspan="2" align="center" style="color: red; font-size: 15px;">
 				<%=error%>
 			</td>
 		</tr>

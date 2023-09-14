@@ -133,7 +133,7 @@
 							<td colspan="8" style="padding-left: 50px;">
 								<c:set var="content" value="${fn:replace(co.content, '<', '&lt;')}"/>
 								<c:set var="content" value="${fn:replace(content, '>', '&gt;')}"/>
-								<c:set var="content" value="${fn:replace(content, 'enter', '<br/>')}"/>
+								<c:set var="content" value="${fn:replace(content, enter, '<br/>')}"/>
 								<span>${content}</span>
 							</td>
 						</tr>
@@ -143,7 +143,6 @@
 								<c:if test="${co.filename ne null}">
 									<c:set var="filename" value="${fn:replace(co.filename, '<', '&lt;')}"/>
 									<c:set var="filename" value="${fn:replace(co.filename, '>', '&gt;')}"/>
-									<c:set var="filename" value="${fn:replace(co.filename, enter, '<br/>')}"/>
 									<a href="/Tjoeun_Data/Upload/${co.filename}" download="${co.filename}">
 										<span style="font-size: 15px; color: #f56a6a;">${co.filename}</span>
 									</a>
@@ -190,7 +189,7 @@
 							<td style="padding-left: 30px; vertical-align: middle;">
 								<c:set var="reason" value="${fn:replace(co.reason, '<', '&lt;')}"/>
 								<c:set var="reason" value="${fn:replace(reason, '>', '&gt;')}"/>
-								<c:set var="reason" value="${fn:replace(reason, 'enter', '<br/>')}"/>
+								<c:set var="reason" value="${fn:replace(reason, enter, '<br/>')}"/>
 								<span>${reason}</span>
 							</td>
 						</tr>

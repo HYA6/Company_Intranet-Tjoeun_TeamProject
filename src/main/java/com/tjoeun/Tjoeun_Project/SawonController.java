@@ -29,12 +29,6 @@ public class SawonController {
 	@Autowired
 	private SqlSession sqlSession;
 	
-	// 결재안 올리는 페이지 불러오기(elecapprsawon.jsp)
-	@RequestMapping("/elecapprsawon")
-	public String elecapprsawon(HttpServletRequest request, Model model) {
-		return "elecapprsawon";
-	}
-	
 	// 사원이 보는 결재 목록 불러오기(elecapprsawonListView.jsp)
 	@RequestMapping("/elecapprsawonList")
 	public String elecapprsawonList(HttpServletRequest request, Model model, ElecapprsawonVO elecapprsawonVO) { 
@@ -113,6 +107,7 @@ public class SawonController {
         logger.info("SawonController의 selectsawonIdx()");
         ElecapprsawonDAO mapper = sqlSession.getMapper(ElecapprsawonDAO.class);
         ElecapprsawonVO eo = mapper.selectsawonIdx(elecapprsawonVO);
+        logger.info("eo: {}", eo);
         model.addAttribute("eo", eo);
         model.addAttribute("currentPage", request.getParameter("currentPage"));
         model.addAttribute("approval", elecapprsawonVO.getApproval());
@@ -124,7 +119,10 @@ public class SawonController {
 	@RequestMapping("/elecapprsawonUpdate")
 	public String update(HttpServletRequest request, Model model, ElecapprsawonVO elecapprsawonVO) {
 		logger.info("SawonController의 elecapprsawonUpdate()");
-		model.addAttribute("eo", elecapprsawonVO);
+		ElecapprsawonDAO mapper = sqlSession.getMapper(ElecapprsawonDAO.class);
+        ElecapprsawonVO eo = mapper.selectsawonIdx(elecapprsawonVO);
+        logger.info("eo: {}", eo);
+        model.addAttribute("eo", eo);
 		model.addAttribute("currentPage", request.getParameter("currentPage"));
 		model.addAttribute("enter", "\r\n");
 		return "elecapprsawonUpdate";

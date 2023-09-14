@@ -64,8 +64,8 @@
 						</tr>
 						<tr style="border-top: none; border-bottom: none;">
 							<td style="width: 550px;">
-								<textarea id="reason" row="3" name="reason"
-									style="width: 95%; resize: none; padding: 5px;">${co.reason}</textarea>
+								<textarea id="reason" name="reason"
+									style="width: 95%; height: 200px; resize: none; padding: 5px;">${co.reason}</textarea>
 							</td>
 						</tr>
 						<tr class="actions" style="border-top: none; border-bottom: none;">

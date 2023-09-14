@@ -90,6 +90,7 @@ public class MealController {
 		
 		model.addAttribute("bmo", bmo);
 		model.addAttribute("currentPage", currentPage);
+		model.addAttribute("enter", "\r\n");
 		return "mealContentView";
 	}
 	

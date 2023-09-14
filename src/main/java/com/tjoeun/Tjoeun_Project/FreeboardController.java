@@ -78,6 +78,7 @@ public class FreeboardController {
 		  logger.info("{}",fo);
 		  model.addAttribute("fo", fo);
 		  model.addAttribute("currentPage", request.getParameter("currentPage"));
+		  model.addAttribute("enter", "\r\n");
 		  return "freeboardContentView"; 
 	}
 	  
@@ -88,6 +89,7 @@ public class FreeboardController {
 		  logger.info("freeboardUpdate"); 
 		  model.addAttribute("fo", freeBoardVO);
 		  model.addAttribute("currentPage", request.getParameter("currentPage"));
+		  model.addAttribute("enter", "\r\n");
 		  return "freeboardUpdate"; 
 	}
 	  

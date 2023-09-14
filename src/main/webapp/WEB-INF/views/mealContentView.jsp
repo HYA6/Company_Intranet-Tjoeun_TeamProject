@@ -90,8 +90,8 @@
 						<tr style="border-top: none;">
 							<td colspan="2" class="content" style="padding-left: 50px;">
 								<c:set var="subject" value="${fn:replace(bmo.subject, '<', '&lt;')}"/>
-								<c:set var="subject" value="${fn:replace(bmo.subject, '>', '&gt;')}"/>
-								<span style="font-size: 20px; color: #f56a6a;">${bmo.subject}</span>
+								<c:set var="subject" value="${fn:replace(subject, '>', '&gt;')}"/>
+								<span style="font-size: 20px; color: #f56a6a;">${subject}</span>
 							</td>
 							<%-- <td class="content" style="width: 100px; text-align: left;">
 								<span>${bmo.name}</span>
@@ -104,21 +104,19 @@
 						<tr style="height: 400px;">
 							<td class="content" colspan="3" style="padding-left: 50px;">
 								<c:set var="content" value="${fn:replace(bmo.content, '<', '&lt;')}"/>
-								<c:set var="content" value="${fn:replace(bmo.content, '>', '&gt;')}"/>
-								<c:set var="content" value="${fn:replace(bmo.content, enter, '<br/>')}"/>
-								<span>${bmo.content}<br/>
+								<c:set var="content" value="${fn:replace(content, '>', '&gt;')}"/>
+								<c:set var="content" value="${fn:replace(content, enter, '<br/>')}"/>
+								<span>${content}</span><br/>
 								<img src="/Tjoeun_Data/mealImages/${bmo.filename}" alt="Image" width="90%" height="90%"/>
-								</span>
 							</td>
 						</tr>
 						<tr>
 							<td class="content" align="center" style="color: #3d4449; font-size: 18px;">파일</td>
 							<td class="content" colspan="3">
 								<c:set var="filename" value="${fn:replace(bmo.filename, '<', '&lt;')}"/>
-								<c:set var="filename" value="${fn:replace(bmo.filename, '>', '&gt;')}"/>
-								<c:set var="filename" value="${fn:replace(bmo.filename, enter, '<br/>')}"/>
-								<a href="/Tjoeun_Data/mealImages/${bmo.filename}" download="${bmo.filename}">
-									<span style="font-size: 15px; color: #f56a6a;">${bmo.filename}</span>
+								<c:set var="filename" value="${fn:replace(filename, '>', '&gt;')}"/>
+								<a href="/Tjoeun_Data/mealImages/${filename}" download="${filename}">
+									<span style="font-size: 15px; color: #f56a6a;">${filename}</span>
 								</a>
 							</td>
 						</tr>

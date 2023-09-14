@@ -143,7 +143,9 @@
 							<label for="subject">제목</label>
 						</td>
 						<td>
-							<input id="subject" type="text" name="subject" value="${eo.subject}"/>
+							<c:set var="subject" value="${fn:replace(eo.subject, '<', '&lt;')}"/>
+							<c:set var="subject" value="${fn:replace(subject, '>', '&gt;')}"/>
+							<input id="subject" type="text" name="subject" value="${subject}"/>
 						</td>
 					</tr>
 					<tr>
@@ -151,6 +153,9 @@
 							<label for="content">내용</label>
 						</td>
 						<td>
+							<c:set var="content" value="${fn:replace(eo.content, '<', '&lt;')}"/>
+							<c:set var="content" value="${fn:replace(content, '>', '&gt;')}"/>
+							<c:set var="content" value="${fn:replace(content, enter, '<br/>')}"/>
 							<textarea id="content" rows="10" name="content" style="resize: none;">${eo.content}</textarea>
 						</td>
 					</tr>

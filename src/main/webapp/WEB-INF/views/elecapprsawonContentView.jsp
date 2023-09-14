@@ -130,10 +130,9 @@
 							<td class="content" colspan="6">
 								<c:if test="${eo.filename ne null}">
 									<c:set var="filename" value="${fn:replace(eo.filename, '<', '&lt;')}"/>
-									<c:set var="filename" value="${fn:replace(eo.filename, '>', '&gt;')}"/>
-									<c:set var="filename" value="${fn:replace(eo.filename, enter, '<br/>')}"/>
-									<a href="/Tjoeun_Data/Upload/${eo.filename}" download="${eo.filename}">
-										<span style="font-size: 15px; color: #f56a6a;">${eo.filename}</span>
+									<c:set var="filename" value="${fn:replace(filename, '>', '&gt;')}"/>
+									<a href="/Tjoeun_Data/Upload/${filename}" download="${filename}">
+										<span style="font-size: 15px; color: #f56a6a;">${filename}</span>
 									</a>
 								</c:if>
 								<c:if test="${eo.filename eq null}">
@@ -166,7 +165,7 @@
 							<td style="padding-left: 30px; vertical-align: middle;">
 								<c:set var="reason" value="${fn:replace(eo.reason, '<', '&lt;')}"/>
 								<c:set var="reason" value="${fn:replace(reason, '>', '&gt;')}"/>
-								<c:set var="content" value="${fn:replace(reason, 'enter', '<br/>')}"/>
+								<c:set var="reason" value="${fn:replace(reason, enter, '<br/>')}"/>
 								<span>${reason}</span>
 							</td>
 						</tr>

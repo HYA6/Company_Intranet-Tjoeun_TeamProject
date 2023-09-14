@@ -143,6 +143,8 @@
 							<label for="subject">제목</label>
 						</td>
 						<td>
+							<c:set var="subject" value="${fn:replace(co.subject, '<', '&lt;')}"/>
+							<c:set var="subject" value="${fn:replace(subject, '>', '&gt;')}"/>
 							<input id="subject" type="text" name="subject" value="${co.subject}"/>
 						</td>
 					</tr>
@@ -151,6 +153,9 @@
 							<label for="content">내용</label>
 						</td>
 						<td>
+							<c:set var="content" value="${fn:replace(co.content, '<', '&lt;')}"/>
+							<c:set var="content" value="${fn:replace(content, '>', '&gt;')}"/>
+							<c:set var="content" value="${fn:replace(content, enter, '<br/>')}"/>
 							<textarea id="content" rows="10" name="content" style="resize: none;">${co.content}</textarea>
 						</td>
 					</tr>

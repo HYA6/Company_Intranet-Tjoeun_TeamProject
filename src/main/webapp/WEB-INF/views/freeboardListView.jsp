@@ -139,11 +139,10 @@
 										date.date == fo.writeDate.date}">
 										TODAY <fmt:formatDate value="${fo.writeDate}" pattern="HH:mm"/>
 									</c:if>			
-									
 									<c:if test="${date.year != fo.writeDate.year || date.month != fo.writeDate.month ||
 										date.date != fo.writeDate.date}">
 										<fmt:formatDate value="${fo.writeDate}" pattern="yyyy-MM-dd(E) a h:mm"/>
-									</c:if>				
+									</c:if>
 								</td>
 							</tr>
 						</c:forEach>

@@ -83,6 +83,7 @@ public class BoardController {
 	    BoardVO bo = mapper.boardByIdx(boardVO);
 	    model.addAttribute("bo", bo);
 	    model.addAttribute("currentPage", request.getParameter("currentPage"));
+	    model.addAttribute("enter", "\r\n");
 	    return "boardContentView";
 	}
 	
@@ -92,6 +93,7 @@ public class BoardController {
 		logger.info("boardUpdate");
 		model.addAttribute("bo", boardVO);
 		model.addAttribute("currentPage", request.getParameter("currentPage"));
+		model.addAttribute("enter", "\r\n");
 		return "boardUpdate";
 	}
 	
@@ -117,11 +119,4 @@ public class BoardController {
 		return "redirect:boardList";
 	}
 	
-	
-	
-	
 }
-
-
-
-

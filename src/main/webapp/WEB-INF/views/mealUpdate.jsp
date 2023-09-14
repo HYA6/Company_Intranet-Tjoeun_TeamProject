@@ -113,6 +113,8 @@
 								<label for="subject">제목</label>
 							</td>
 							<td>
+								<c:set var="subject" value="${fn:replace(bmo.subject, '<', '&lt;')}"/>
+								<c:set var="subject" value="${fn:replace(subject, '>', '&gt;')}"/>
 								<input id="subject" type="text" name="subject" value="${bmo.subject}"/>
 							</td>
 						</tr>
@@ -121,14 +123,18 @@
 								<label for="content">내용</label>
 							</td>
 							<td>
+								<c:set var="content" value="${fn:replace(bmo.content, '<', '&lt;')}"/>
+								<c:set var="content" value="${fn:replace(content, '>', '&gt;')}"/>
+								<c:set var="content" value="${fn:replace(content, enter, '<br/>')}"/>
 								<textarea id="content" rows="10" name="content" style="resize: none;">${bmo.content}</textarea>
 							</td>
 						</tr>
 						<tr class="actions">
 							<td colspan="2">
+								<span style="color: #f56a6a; font-size: 13px; opacity: 80%;">* 파일 첨부 생략 시 기존 파일이 유지됩니다.</span><br/>
 								<div class="filebox">
 									<label for="filename">파일 첨부</label>
-									<input class="file" type="file" id="filename" name="imageFile" value="${bmo.filename}"/>
+									<input class="file" type="file" id="filename" name="imageFile"/>
 								</div>
 							</td>   
 						</tr>
