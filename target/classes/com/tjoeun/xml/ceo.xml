@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tjoeun.dao.CeoDao">
+	
+	<!-- 메인글 전체 개수를 얻어온다. -->
+	<select id="selectsawonCountByCeo" resultType="int">
+		select count(*) from elecappr
+	</select>
+
+	<!-- 1페이지 분량의 메인글을 얻어온다. -->
+	<select id="selectsawonListByCeo" parameterType="java.util.HashMap" resultType="co">
+		<![CDATA[
+		select * from (
+			select rownum rnum, TT.* from (
+				select * from elecappr order by idx desc
+			) TT where rownum <= #{endNo}
+		) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 결재 종류로 검색 -->
+	<select id="searchPaperCountByCeo" resultType="int">
+		SELECT COUNT(*) FROM elecappr WHERE paper LIKE '%'||#{item}||'%'
+	</select>
+	<select id="selectPaperListByCeo" resultType="co">
+		<![CDATA[
+		select * from (
+			select rownum rnum, TT.* from (
+				select * from elecappr where paper LIKE '%'||#{item}||'%' order by idx desc
+			) TT where rownum <= #{endNo}
+		) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 제목으로 검색 -->
+	<select id="searchSubjectCountByCeo" resultType="int">
+		SELECT COUNT(*) FROM elecappr WHERE subject LIKE '%'||#{item}||'%'
+	</select>
+	<select id="selectSubjectListByCeo" resultType="co">
+		<![CDATA[
+		select * from (
+			select rownum rnum, TT.* from (
+				select * from elecappr where subject LIKE '%'||#{item}||'%' order by idx desc
+			) TT where rownum <= #{endNo}
+		) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 내용으로 검색 -->
+	<select id="searchContentCountByCeo" resultType="int">
+		SELECT COUNT(*) FROM elecappr WHERE content LIKE '%'||#{item}||'%'
+	</select>
+	<select id="selectContentListByCeo" resultType="co">
+		<![CDATA[
+		select * from (
+			select rownum rnum, TT.* from (
+				select * from elecappr where content LIKE '%'||#{item}||'%' order by idx desc
+			) TT where rownum <= #{endNo}
+		) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 이름으로 검색 -->
+	<select id="searchNameCountByCeo" resultType="int">
+		SELECT COUNT(*) FROM elecappr WHERE name LIKE '%'||#{item}||'%'
+	</select>
+	<select id="selectNameListByCeo" resultType="co">
+		<![CDATA[
+		select * from (
+			select rownum rnum, TT.* from (
+				select * from elecappr where name LIKE '%'||#{item}||'%' order by idx desc
+			) TT where rownum <= #{endNo}
+		) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+</mapper>

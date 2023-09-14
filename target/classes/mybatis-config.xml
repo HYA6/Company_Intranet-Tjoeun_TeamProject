@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.tjoeun.vo.MainVO" alias="mo" />
+		<typeAlias type="com.tjoeun.vo.ElecapprsawonVO" alias="eo" />
+		<typeAlias type="com.tjoeun.vo.AttendanceVO" alias="ao" />  
+		<typeAlias type="com.tjoeun.vo.BoardVO" alias="bo" />
+		<typeAlias type="com.tjoeun.vo.CeoVO" alias="co" />
+		<typeAlias type="com.tjoeun.vo.MeetingVO" alias="mro" />
+		<typeAlias type="com.tjoeun.vo.Board_MealVO" alias="bmo"/>
+		<typeAlias type="com.tjoeun.vo.FreeBoardVO" alias="fo"/>
+		<typeAlias type="com.tjoeun.vo.ScheduleDto" alias="so"/>
+	</typeAliases>
+</configuration>

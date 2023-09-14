@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tjoeun.dao.BoardDAO">
+
+	<insert id="boardinsert" parameterType="bo">
+		INSERT INTO BOARD (idx, subject, content, gubun) 
+		values (board_idx_seq.nextval, #{subject}, #{content}, #{gubun})
+	</insert>
+
+
+	<select id="selboCount" resultType="int">
+		SELECT COUNT(*) FROM BOARD
+	</select>
+
+
+	<select id="selboList" parameterType="java.util.HashMap" resultType="bo">
+		<![CDATA[
+		select * from (
+			select rownum rnum, GG.* from (
+				select * from BOARD order by idx desc
+			) GG where rownum <= #{endNo}
+		) where rnum >= #{startNo}
+		]]>
+	</select>
+
+
+	<select id="spcselboList" parameterType="java.util.HashMap" resultType="bo">
+		<![CDATA[
+		select * from (
+			select rownum rnum, GG.* from (
+				select * from BOARD where gubun = '주요공지' order by idx desc
+			) GG where rownum <= #{endNo}
+		) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	
+	<select id="selboList2" resultType="bo">
+		<![CDATA[
+		select * from (
+			select rownum rnum, GG.* from (
+				select * from BOARD order by idx desc
+			) GG where rownum <= 5
+		) where rnum >= 1
+		]]>
+	</select>
+
+
+	<select id="boardByIdx" parameterType="int" resultType="bo">
+		select * from BOARD where idx = #{idx}
+	</select>
+
+
+	<delete id="boardDelete" parameterType="int">
+		delete from BOARD where idx = #{idx}
+	</delete>
+
+
+	<update id="boardUpdate" parameterType="bo">
+		update BOARD set subject = #{subject}, content = #{content}, gubun = #{gubun} where idx = #{idx}
+	</update>
+
+</mapper>
