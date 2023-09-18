@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: 'PuradakGentleGothicR';
+	font-weight: 200;
+}
+
+header {
+	height: 8em;
+}
+
+table {
+	width: 500px;
+	padding: 5px;
+	border: 2px solid #7f888f;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.th { /* 사원번호, 비밀번호 */
+	color: #f56a6a;
+	font-size: 23px;
+	padding: 20px;
+}
+
+.input { /* 사원번호, 비밀번호 입력칸 */
+	width: 300px;
+	height: 30px;
+	color: #7f888f;
+	font-size: 20px;
+	border: none;
+	border-bottom: 2px solid #7f888f;
+}
+
+#login { /* 로그인 */
+	width: 70px;
+	height: 30px;
+	font-size: 14px;
+	color: white;
+	border: none;
+	background-color: #f56a6a;
+	cursor: pointer;
+}
