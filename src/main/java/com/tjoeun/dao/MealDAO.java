@@ -13,5 +13,6 @@ public interface MealDAO {
 	Board_MealVO selectMealbyIdx(int idx);
 	void mealdelete(int idx);
 	ArrayList<Board_MealVO> selectMealTopList();
+	void mealupdate(Board_MealVO bmo);
 	
 }

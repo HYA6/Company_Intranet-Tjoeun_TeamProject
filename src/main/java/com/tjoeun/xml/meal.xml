@@ -36,6 +36,11 @@
 		]]>
 	</select>
 	
+	<update id="mealupdate" parameterType="bmo">
+		update meal set subject = #{subject}, content = #{content}, filename = #{filename} where idx = #{idx}
+	</update>
+	
+	
 	<delete id="mealdelete" parameterType="int">
 		delete from meal where idx = #{idx}
 	</delete>

@@ -80,7 +80,7 @@
 						</ul>
 					</div>
 				</header>
-				<form action="mealContentDelete" method="post" id="delete">
+				<form action="mealUpdate" method="post" id="Update">
 					<table id="table" style="width: 1100px; margin-left: auto; margin-right: auto;">
 						<tr style="border-bottom: none;">
 							<th style="width: 150px; text-align: left;">식단표</th>
@@ -123,10 +123,9 @@
 						<tr class="actions" style="border-bottom: none;">
 							<td colspan="3" align="right">
 								<c:if test="${mvo.team == '경영진' || mvo.team == '식당 운영' || mvo.team == '총무'}">
-									<input class="button big" type="button" value="수정하기"
-										onclick="location.href='mealUpdate?idx=${bmo.idx}&currentPage=${currentPage}&subject=${bmo.subject}&content=${bmo.content}'"/>
+									<input class="button big" type="submit" value="수정하기"/>
 									<input class="button big" type="button" value="삭제하기"
-										onclick="confirmAndDelete()"/>
+										onclick="location.href='mealContentDelete?idx=${bmo.idx}&currentPage=${currentPage}&filename=${bmo.filename}'"/>
 								</c:if>
 								<input class="button big" type="button" value="돌아가기"
 									onclick="location.href='mealListView?currentPage=${currentPage}'"/>

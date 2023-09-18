@@ -142,6 +142,8 @@
 							<td colspan="2" align="center">
 								<input class="button big" type="submit" value="수정하기"/>
 								<input class="button big" type="reset" value="다시쓰기"/>
+								<input class="button big" type="button" value="돌아가기" 
+									onclick="history.back()"/>
 								<input class="button big" type="button" value="목록으로" 
 									onclick="location.href='mealListView'"/>
 							</td>
@@ -149,6 +151,7 @@
 					</table>
 					<input id="name" type="hidden" name="name" value="${mvo.name}"/>
 					<input id="cnum" type="hidden" name="cnum" value="${mvo.cnum}"/>
+					<input id="idx" type="hidden" name="idx" value="${bmo.idx}"/>
 					<input id="currentPage" type="hidden" name="currentPage" value="${currentPage}"/>
 				</form>
 			</div> <!-- <div class="inner"> -->

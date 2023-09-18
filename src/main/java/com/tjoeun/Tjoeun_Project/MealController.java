@@ -108,13 +108,13 @@ public class MealController {
 	
 	@RequestMapping("/mealInsertOK")
 	public String mealInsertOK(HttpSession session, @RequestParam("imageFile") MultipartFile file,
-			Board_MealVO mealVO) {
+			Board_MealVO bmo) {
 
 		Object loginSession = session.getAttribute("mvo");
 		if (loginSession == null)
 			return "redirect:login";
 
-		logger.info("mealVO : {}", mealVO);
+		logger.info("mealVO : {}", bmo);
 
 		MealDAO mapper = sqlSession.getMapper(MealDAO.class);
 		if (!file.isEmpty()) {
@@ -123,7 +123,7 @@ public class MealController {
 				String originalFilename = file.getOriginalFilename();
 
 				// 새로운 이름변수 ( 현재 시간 + 파일 이름 ) 설정
-				String newFilename = System.currentTimeMillis() + "_" + originalFilename;
+				String newFilename = System.currentTimeMillis() + "_" + bmo.getCnum() + "_" + originalFilename;
 				// String absoluteUploadPath = servletContext.getRealPath(UPLOAD_DIR);
 				// logger.info(absoluteUploadPath);
 
@@ -141,14 +141,14 @@ public class MealController {
 					logger.info("있어서 보낸 최종 목적지 : {}", destination);
 					file.transferTo(destination);
 				}
-				logger.info("filename 넣기 전 mealVO : {}", mealVO);
+				logger.info("filename 넣기 전 mealVO : {}", bmo);
 				
-				mealVO.setFilename(newFilename); // 업로드된 파일명을 mealVO에 설정
+				bmo.setFilename(newFilename); // 업로드된 파일명을 mealVO에 설정
 
-				logger.info("최종 mealVO : {}", mealVO);
+				logger.info("최종 mealVO : {}", bmo);
 
 				// Mapper를 통한 DB 저장 등 추가 작업 수행
-				mapper.mealinsert(mealVO);
+				mapper.mealinsert(bmo);
 
 				return "redirect:mealListView";
 			} catch (IOException e) {
@@ -156,7 +156,7 @@ public class MealController {
 			}
 		} else {
 			// 업로드된 이미지가 없을 때 처리
-			mapper.mealinsert(mealVO);
+			mapper.mealinsert(bmo);
 
 			return "redirect:mealListView";
 		}
@@ -177,6 +177,89 @@ public class MealController {
 		model.addAttribute("currentPage", currentPage);
 		return "mealUpdate";
 	}
+	
+	
+	
+	
+	
+	
+	@RequestMapping("/mealUpdateOK")
+	public String mealContentUpdateOK(HttpSession session, Model model, HttpServletRequest request, Board_MealVO bmo, int currentPage, @RequestParam("imageFile") MultipartFile file) {
+
+		Object loginSession = session.getAttribute("mvo");
+		if ( loginSession == null ) return "redirect:login";		
+		
+		
+		
+		MealDAO mapper = sqlSession.getMapper(MealDAO.class);
+		
+		// 게시물의 idx, filename 받아옴
+		int idx = Integer.parseInt(request.getParameter("idx"));
+		bmo.setIdx(idx);
+		
+		
+		logger.info("first bmo : {}", bmo);
+		
+		
+			// 이미지 삽입 / 갱신할 경우
+				if (!file.isEmpty()) {
+					try {
+						// 들어온 파일의 이름을 변수로 설정
+						String originalFilename = file.getOriginalFilename();
+
+						// 새로운 이름변수 ( 현재 시간 + 파일 이름 ) 설정
+						String newFilename = System.currentTimeMillis() + "_ " + bmo.getIdx() + "_" + bmo.getCnum() + "_" + originalFilename;
+						// String absoluteUploadPath = servletContext.getRealPath(UPLOAD_DIR);
+						// logger.info(absoluteUploadPath);
+
+						// 경로 변수로 File 타입 목적지 변수 설정
+						File destination = new File(IMAGE_UPLOAD_DIR, newFilename);
+
+						// 만약 디렉토리가 존재하지 않다면
+						if (!destination.getParentFile().exists()) {
+
+						// 디렉토리 만들기, 목적지로 파일 보내기
+							destination.getParentFile().mkdirs();
+							file.transferTo(destination);
+							logger.info("디렉토리 만들어서 보낸 최종 목적지 : {}", destination);
+						} else {
+							// 파일 디렉토리 존재한다면
+							logger.info("디렉토리 이미 존재, 최종 목적지 : {}", destination);
+							file.transferTo(destination);
+						}
+						// 파일 서버 저장소 or 외부 저장소에 전송 후
+						logger.info("DB에 filename 넣기 전 bmo : {}", bmo);
+						
+						
+						
+						bmo.setFilename(newFilename); // 업로드된 파일명을 board_mealVO에 설정
+						
+					} catch (IOException e) {
+						// 파일 전송 도중 오류 발생시
+						e.printStackTrace();
+						logger.info("파일 전송에 실패했습니다.");
+					}
+					
+				} 
+				
+				// 갱신할 이미지 없으면?
+				else {
+					
+					Board_MealVO temporary_bmo = mapper.selectMealbyIdx(idx);
+					bmo.setFilename(temporary_bmo.getFilename());
+				}
+		
+		logger.info("찐 bmo : {}", bmo);
+		
+		mapper.mealupdate(bmo);
+		
+		model.addAttribute("bmo", bmo);
+		model.addAttribute("idx", idx);
+		model.addAttribute("currentPage", currentPage);
+		return "redirect:mealContentView";
+	}
+
+	
 	
 	@RequestMapping("/mealContentDelete")
 	public String mealContentDelete(HttpSession session, Board_MealVO bmo) {

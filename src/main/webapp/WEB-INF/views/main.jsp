@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="css/main.css"/>
 <style type="text/css">
 	#header { /* Header */
-		padding-top: 3em;
+		padding-top: 1em;
 	}
 	.icons { /* 이름, 로그아웃 */
 		height: 20px;
@@ -203,7 +203,7 @@
 									</th>
 								</tr>
 								<tr style="height: 75.41px;">
-									<td style="width: 30%; padding: 13px; text-align: left; vertical-align: middle; border-right: 1px solid rgba(210, 215, 217, 0.75);">
+									<td style="width: 25%; padding: 13px; text-align: left; vertical-align: middle; border-right: 1px solid rgba(210, 215, 217, 0.75);">
 										<a href="getAllMeetingRooms?room_id=101">101호 회의실</a>
 									</td>
 									<td style="padding: 13px; text-align: left; vertical-align: middle;">
@@ -220,7 +220,7 @@
 								</tr>
 								<tr style="height: 75.41px;">
 									<c:set var="list3" value="${mainMeetingList.list3}"/>					
-									<td style="width: 30%; padding: 13px; text-align: left; vertical-align: middle; border-right: 1px solid rgba(210, 215, 217, 0.75);">
+									<td style="width: 25%; padding: 13px; text-align: left; vertical-align: middle; border-right: 1px solid rgba(210, 215, 217, 0.75);">
 										<a href="getAllMeetingRooms?room_id=102">102호 회의실</a>
 									</td>
 									<td style="padding: 13px; text-align: left; vertical-align: middle;">
@@ -236,7 +236,7 @@
 									</td>
 								</tr>
 								<tr style="height: 75.41px;">
-									<td style="width: 30%; padding: 13px; text-align: left; vertical-align: middle; border-right: 1px solid rgba(210, 215, 217, 0.75);">
+									<td style="width: 25%; padding: 13px; text-align: left; vertical-align: middle; border-right: 1px solid rgba(210, 215, 217, 0.75);">
 										<a href="getAllMeetingRooms?room_id=103">103호 회의실</a>
 									</td>
 									<td style="padding: 13px; text-align: left; vertical-align: middle;">
