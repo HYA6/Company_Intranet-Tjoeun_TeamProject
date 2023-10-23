@@ -4,7 +4,7 @@
 주제: 사내 인트라넷 <br/><br/>
 기간: 2023.06.28 ~ 2023.09.19 <br/><br/>
 사용한 기술 <br/>
-: java, jQuery, javascript, bootstrap, datepicker, html, jsp, css, spring, oracle, mybatis, servlet, maven <br/><br/>
+: Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tomcat, Oracle Database, Eclipse <br/><br/>
 <h3>주요 기능</h3>
 - 결재안 올리기 / 사장 - 결재 승인, 반려<br/>
 - 회의실 예약<br/>
