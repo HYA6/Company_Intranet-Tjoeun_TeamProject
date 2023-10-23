@@ -1,10 +1,15 @@
 # Tjoeun_Team_Project
 더조은 아카데미 팀 프로젝트 
 
-주제: 사내 인트라넷 <br/><br/>
-기간: 2023.06.28 ~ 2023.09.19 <br/><br/>
-사용한 기술 <br/>
-: Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tomcat, Oracle Database, Eclipse <br/><br/>
+<h3>주제</h3>
+사내 인트라넷 <br/><br/>
+
+<h3>기간</h3>
+2023.06.28 ~ 2023.09.19 <br/><br/>
+
+<h3>사용한 기술</h3>
+Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tomcat, Oracle Database, Eclipse <br/><br/>
+
 <h3>주요 기능</h3>
 - 결재안 올리기 / 사장 - 결재 승인, 반려<br/>
 - 회의실 예약<br/>
