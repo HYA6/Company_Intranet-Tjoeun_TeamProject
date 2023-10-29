@@ -1,4 +1,4 @@
-# Company Intranet (Tjoeun Team Project)
+# Company Intranet (Team Project)
 
 <h3>주제</h3>
 사내 인트라넷<br/>
