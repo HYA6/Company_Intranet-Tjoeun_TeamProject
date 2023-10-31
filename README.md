@@ -51,7 +51,7 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/2baf9cd4-a4e2-46aa-9b5e-7d9221242c96"/><br/>
 
 
-- 회의실 예약 (js 부분 도움, 예약 부분 alert창 띄우기)<br/>
+- 회의실 예약 (모달창에 예약 정보 띄우기, 예약되어 있는 시간 비활성화)<br/>
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/57adea2c-5016-4e7d-a776-2aeae3cf9add"/><br/>
 
 
