@@ -25,6 +25,7 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
 - 전자 결재 사장 페이지 (결재 한 건 보는 페이지, 수정, 삭제, 승인, 반려, 팝업창, 파일 첨부, 검색 기능, 결재 종류에 따른 페이지 나누기)<br/>
 - 회의실 예약 (js 부분 도움, 예약 부분 alert창 띄우기)<br/>
 - 사내 일정 (전체)<br/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/738d7100-0d0c-4dc7-80d7-61cc0ecc87b4"/>
 - 공지사항 (주요 공지 글목록에서 맨 위로 띄우기, 기능 구현 도움)<br/>
 - 자유게시판 (기능 구현 도움)<br/>
 - 사이드 바 (전체)<br/>
