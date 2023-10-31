@@ -18,15 +18,13 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
 - 출퇴근 기록<br/>
 - 마이페이지(직급, 연차, 연락처 등)<br/>
 - 사내 일정, 공지사항, 자유게시판, 식단표<br/>
+
 ***
+
 <h3>팀 내 역할 및 맡은 기능</h3>
 "팀원 및 총괄 디렉터 (기능 테스트, 오류 및 코드 정리, 일정 확인, 팀원들이 구현한 기능들 취합, 기능 정리 및 추가해야 할 사항 정리 등)"<br/><br/>
-목차<br/>
-<h5>전자 결재</h5><br/>
-<h5>사내 일정</h5><br/>
-<h5>공지사항</h5><br/>
-<h5>회의실 예약</h5><br/><br/>
 
+<h5>전자 결재</h5><br/>
 - 전자 결재 경영진 페이지 (결재 한 건 보는 페이지, 수정, 삭제, 승인, 반려, 팝업창, 파일 첨부, 검색 기능, 결재 종류에 따른 페이지 나누기)<br/>
 1. 전자 결재 반려 사유 입력<br/>
   <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/3533ae59-1dd6-481f-b445-20420cf49ebc" width="600"/><br/>
@@ -40,6 +38,7 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
   <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/9b36b44b-26fa-4010-a451-730f2215ca30"/><br/>
 
 
+<h5>사내 일정</h5><br/>
 - 사내 일정 (전체)<br/>
 1. 사내 일정 저장<br/>
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/738d7100-0d0c-4dc7-80d7-61cc0ecc87b4" width="600"/><br/>
@@ -51,14 +50,17 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ae5d3ff8-4508-49c3-852a-95197936503b" width="600"/><br/>
 
 
+<h5>메인</h5><br/><br/>
 - 메인 (행사 사진, 공지사항, 사내 일정)<br/>
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/2baf9cd4-a4e2-46aa-9b5e-7d9221242c96"/><br/>
 
 
+<h5>회의실 예약</h5><br/><br/>
 - 회의실 예약 (모달창에 예약 정보 띄우기, 예약되어 있는 시간 비활성화)<br/>
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/57adea2c-5016-4e7d-a776-2aeae3cf9add"/><br/>
 
 
+<h5>공지사항</h5><br/>
 - 공지사항 (주요 공지 글목록에서 맨 위로 띄우기, 기능 구현 도움)<br/>
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/250214f3-2f9e-486a-830a-f67c990f0072"/><br/>
 
