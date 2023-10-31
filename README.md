@@ -1,18 +1,18 @@
 # Company Intranet (Team Project)
 
-<h4>주제</h4>
+<h3>주제</h3>
 
   * 사내 인트라넷<br/>
 
-<h4>수행인원</h4>
+<h3>수행인원</h3>
 
   * 팀 프로젝트 - 4명<br/>
 
-<h4>기간</h4>
+<h3>기간</h3>
 
   * 2023.06.28 ~ 2023.09.19 <br/>
 
-<h4>사용한 기술</h4>
+<h3>사용한 기술</h3>
 
   * <b>BACK-END</b><br/>
       * Java, Spring Framework, MyBatis, Ajax, Maven
@@ -25,7 +25,7 @@
   * <b>TOOLS & COMMUNICATION</b><br/>
     * STS Eclipse, Notion, Kakaotalk
 
-<h4>주요 기능</h4>
+<h3>주요 기능</h3>
 
   * 전자 결재 / 사장 - 결재 승인, 반려<br/>
   * 회의실 예약<br/>
