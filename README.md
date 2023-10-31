@@ -46,7 +46,7 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/35fe889e-1a25-4438-a7f7-581f07d4e656" width="600"/><br/>
   * 전자 결재 검색 (결재 종류별, 제목, 내용, 이름)<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/9b36b44b-26fa-4010-a451-730f2215ca30"/><br/>
-  * 수정, 삭제
+  * 전자 결재 작성, 수정, 삭제
   * 파일 첨부
 
 ---
