@@ -1,24 +1,48 @@
 # Company Intranet (Team Project)
 
-<h2>주제</h2>
-사내 인트라넷<br/>
+<h4>주제</h4>
 
-<h2>수행인원</h2>
-팀 프로젝트 - 4명<br/>
+  * 사내 인트라넷<br/>
 
-<h2>기간</h2>
-2023.06.28 ~ 2023.09.19 <br/>
+<h4>수행인원</h4>
 
-<h2>사용한 기술</h2>
-Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tomcat, Oracle Database, Eclipse <br/>
+  * 팀 프로젝트 - 4명<br/>
 
-<h2>주요 기능</h2>
+<h4>기간</h4>
 
-* 결재안 올리기 / 사장 - 결재 승인, 반려<br/>
-* 회의실 예약<br/>
-* 출퇴근 기록<br/>
-* 마이페이지(직급, 연차, 연락처 등)<br/>
-* 사내 일정, 공지사항, 자유게시판, 식단표<br/>
+  * 2023.06.28 ~ 2023.09.19 <br/>
+
+<h4>사용한 기술</h4>
+
+  * <b>BACK-END</b>
+    * Java
+    * Spring
+    * MyBatis
+    * Ajax
+    * Maven
+  * <b>FRONT-END</b>
+    * JavaScript
+    * JQuery
+    * Jsp
+    * JSTL
+    * CSS
+    * Bootstrap
+  * <b>DB</b>
+    * Oracle Database
+  * <b>SERVER</b>
+    * Tomcat
+  * <b>TOOLS & COMMUNICATION</b>
+    * Eclipse
+    * Notion
+    * Kakaotalk
+
+<h4>주요 기능</h4>
+
+  * 결재안 올리기 / 사장 - 결재 승인, 반려<br/>
+  * 회의실 예약<br/>
+  * 출퇴근 기록<br/>
+  * 마이페이지(직급, 연차, 연락처 등)<br/>
+  * 사내 일정, 공지사항, 자유게시판, 식단표<br/>
 
 
 <h2>팀 내 역할</h2>
@@ -83,20 +107,20 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
   - 기능 구현 도움<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/250214f3-2f9e-486a-830a-f67c990f0072" width="600"/><br/>
 
-- 자유게시판
+- <b>자유게시판</b>
   - 기능 구현 도움
 
 
-- 사이드 바
+- <b>사이드 바</b>
   - 페이지 연결
 
 
-- css
+- <b>css</b>
   - 전체
   - 템플릿 사용 - 출처: https://html5up.net/
 
 
-- 전체적인 오류 수정
+- <b>전체적인 오류 수정</b>
   - 페이지 이동 버튼
   - 줄바꿈 적용
   - 입력한 내용이 없으면 alert창 띄우기
