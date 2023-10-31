@@ -59,7 +59,6 @@ public class ScheduleController {
 		
 		// 실질적인 달력 데이터 리스트에 데이터 삽입 시작.
 		// 일단 시작 인덱스까지 아무것도 없는 데이터 삽입
-		logger.info("today_info.get(\"start\"): {}", today_info.get("start"));
 		for(int i=1; i<=today_info.get("start"); i++){
 			calendarData = new CalendarVO(null, null, null, null, null, null);
 			dateList.add(calendarData);
@@ -75,12 +74,12 @@ public class ScheduleController {
 				// 현재 스케줄 날짜(일)
 				int date = Integer.parseInt(String.valueOf(Schedule_list.get(i).getSchedule_date()).substring(String.valueOf(Schedule_list.get(i).getSchedule_date()).length()-2,
 						String.valueOf(Schedule_list.get(i).getSchedule_date()).length()));
-				logger.info("date: {}", date);
+//				logger.info("date: {}", date);
 				if(i>0){ // 두번째 스케줄부터 순서대로 저장
 					// 이전 스케줄 날짜
 					int date_before = Integer.parseInt(String.valueOf(Schedule_list.get(i-1).getSchedule_date()).substring(String.valueOf(Schedule_list.get(i-1).getSchedule_date()).length()-2,
 							String.valueOf(Schedule_list.get(i-1).getSchedule_date()).length()));
-					logger.info("date_before: {}", date_before);
+//					logger.info("date_before: {}", date_before);
 					if(date_before==date){ // 이전 스케줄과 날짜가 같으면 다음 인덱스에 저장
 						j=j+1;
 						schedule_data_arr[date][j] = Schedule_list.get(i);
@@ -204,13 +203,16 @@ public class ScheduleController {
 		logger.info("CalendarController의 scheduleUpdate() 메소드 실행");
 		ScheduleDao scheduleDao = sqlSession.getMapper(ScheduleDao.class);
 		int countNum = scheduleDao.before_schedule_add_search_num(scheduleDto);
-		logger.info("{}", scheduleDto);
+		logger.info("orginScheduleNum: {}", request.getParameter("orginScheduleNum"));
+		int scheduleNum = Integer.parseInt(request.getParameter("orginScheduleNum"));
+		logger.info("countNum: {}", countNum);
+		logger.info("scheduleNum: {}", scheduleNum);
 		String message = "";
-		if (countNum == 0) {
+		if (scheduleDto.getSchedule_num() != scheduleNum && countNum != 0) {
+			message="중복된 순번입니다.";
+		} else {
 			scheduleDao.scheduleUpdate(scheduleDto);
 			message = "스케줄이 수정되었습니다.";
-		} else {
-			message="중복된 순번입니다.";
 		}
 		rttr.addFlashAttribute("message", message);
 		return "redirect:ScheduleView";

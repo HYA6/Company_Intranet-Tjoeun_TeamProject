@@ -22,6 +22,7 @@ $(document).ready(function(){
 		var subject = $(this).data('subject');
 		var desc = $(this).data('desc');
 	    $("#schedule_idx").val(idx);
+	    $("#orginScheduleNum").val(num);
 	    $("#schedule_num").val(num);
 	    $("#schedule_date").val(date);
 	    $("#schedule_subject").val(subject);

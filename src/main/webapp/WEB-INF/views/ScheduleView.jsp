@@ -685,8 +685,9 @@
 						</div>
 						<form name="schedule_update" action="scheduleUpdate">
 							<input type="hidden" id="schedule_idx" name="schedule_idx"/>
-							<input type="hidden" name="year" value="${today_info.search_year}" />
-							<input type="hidden" name="month" value="${today_info.search_month-1}" />
+							<input type="hidden" name="year" value="${today_info.search_year}"/>
+							<input type="hidden" name="month" value="${today_info.search_month-1}"/>
+							<input type="hidden" name="orginScheduleNum" id="orginScheduleNum"/>
 							<div class="contents">
 								<ul>
 									<li>
@@ -714,7 +715,7 @@
 										</div>
 									</li>
 									<li class="button_li">
-										<c:if test="${mvo.cnum == 220 || mvo.cnum == 112 || mvo.cnum == 115 || mvo.cnum == 118}">
+										<c:if test="${mvo.team == '총무' || mvo.team == '경영진'}">
 											<button type="button" class="board_move_go pointer" onclick="scheduleUpdate()">일정수정</button>
 											<button type="button" class="board_move_go pointer" onclick="scheduleDelete()">일정삭제</button>
 										</c:if>

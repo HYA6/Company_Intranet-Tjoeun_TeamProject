@@ -52,7 +52,9 @@ VALUES (122, '총무팀', '230118', '총무', '팀장', 'c@a', '010-2468-3151', '990608
 INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
 VALUES (123, 'IT 개발팀',  '220119', 'IT 개발', '팀장', 'd@a', '010-5044-1868', '901007', 15, '1234');
 INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
-VALUES (230, '경영진', '171013', '경영진', '사장', 'j@a', '010-1234-4566', '800714', 15, '1234');
+VALUES (220, '경영진', '171013', '경영진', '사장', 'j@a', '010-1234-4566', '800714', 15, '1234');
+
+DELETE FROM main WHERE cnum = 220;
 
 INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
 VALUES (200, '관리자', '221222', '경영진', 'ADMIN', 'j@a', '010-1111-1111', '000000', 15, '1234');
