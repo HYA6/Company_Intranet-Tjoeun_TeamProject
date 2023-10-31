@@ -14,31 +14,20 @@
 
 <h4>사용한 기술</h4>
 
-  * <b>BACK-END</b>
-    * Java
-    * Spring
-    * MyBatis
-    * Ajax
-    * Maven
-  * <b>FRONT-END</b>
-    * JavaScript
-    * JQuery
-    * Jsp
-    * JSTL
-    * CSS
-    * Bootstrap
-  * <b>DB</b>
-    * Oracle Database
-  * <b>SERVER</b>
-    * Tomcat
-  * <b>TOOLS & COMMUNICATION</b>
-    * Eclipse
-    * Notion
-    * Kakaotalk
+  * <b>BACK-END</b><br/>
+      * Java, Spring Framework, MyBatis, Ajax, Maven
+  * <b>FRONT-END</b><br/>
+      * JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap
+  * <b>DB</b><br/>
+      * Oracle Database
+  * <b>SERVER</b><br/>
+      * Tomcat
+  * <b>TOOLS & COMMUNICATION</b><br/>
+    * STS Eclipse, Notion, Kakaotalk
 
 <h4>주요 기능</h4>
 
-  * 결재안 올리기 / 사장 - 결재 승인, 반려<br/>
+  * 전자 결재 / 사장 - 결재 승인, 반려<br/>
   * 회의실 예약<br/>
   * 출퇴근 기록<br/>
   * 마이페이지(직급, 연차, 연락처 등)<br/>
@@ -53,8 +42,6 @@
   - 일정 확인
   - 팀원들이 구현한 기능들 취합
   - 기능 정리 및 추가해야 할 사항 정리
-
-***
 
 <h2>맡은 기능</h2>
 
