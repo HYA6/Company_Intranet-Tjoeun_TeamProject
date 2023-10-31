@@ -62,8 +62,6 @@
   * 전자 결재 작성, 수정, 삭제
   * 파일 첨부
 
----
-
 - <h3>사내 일정(전체)</h3>
 
   * 사내 일정 저장<br/>
@@ -74,8 +72,6 @@
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ef94938e-773c-4db8-8485-e7fbdade0eb5" width="600"/><br/>
   * 사내 일정 달력 검색 및 날짜 넘기기<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ae5d3ff8-4508-49c3-852a-95197936503b" width="600"/><br/>
-
----
 
 - <h3>메인</h3>
 
@@ -99,15 +95,12 @@
 - <b>자유게시판</b>
   - 기능 구현 도움
 
-
 - <b>사이드 바</b>
   - 페이지 연결
-
 
 - <b>css</b>
   - 전체
   - 템플릿 사용 - 출처: https://html5up.net/
-
 
 - <b>전체적인 오류 수정</b>
   - 페이지 이동 버튼
