@@ -46,13 +46,17 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
 4. 사내 일정 달력 검색 및 날짜 넘기기<br/>
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ae5d3ff8-4508-49c3-852a-95197936503b" width="600"/><br/>
 
+
 - 메인 (행사 사진, 공지사항, 사내 일정)<br/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/2baf9cd4-a4e2-46aa-9b5e-7d9221242c96"/><br/>
 
 
 - 회의실 예약 (js 부분 도움, 예약 부분 alert창 띄우기)<br/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/57adea2c-5016-4e7d-a776-2aeae3cf9add"/><br/>
 
 
 - 공지사항 (주요 공지 글목록에서 맨 위로 띄우기, 기능 구현 도움)<br/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/250214f3-2f9e-486a-830a-f67c990f0072"/><br/>
 
 
 - 자유게시판 (기능 구현 도움)<br/>
