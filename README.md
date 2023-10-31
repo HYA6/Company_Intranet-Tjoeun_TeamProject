@@ -20,15 +20,31 @@ Java, JavaScript, JQuery, Jsp, JSTL, CSS, Bootstrap, Spring, MyBatis, maven, Tom
 - 사내 일정, 공지사항, 자유게시판, 식단표<br/>
   
 <h3>팀 내 역할 및 맡은 기능</h3>
-팀원 및 총괄 디렉터 (기능 테스트, 오류 및 코드 정리, 일정 확인, 팀원들이 구현한 기능들 취합, 기능 정리 및 추가해야 할 사항 정리 등)<br/>
+팀원 및 총괄 디렉터 (기능 테스트, 오류 및 코드 정리, 일정 확인, 팀원들이 구현한 기능들 취합, 기능 정리 및 추가해야 할 사항 정리 등)<br/><br/>
 
 
-- 전자 결재 사장 페이지 (결재 한 건 보는 페이지, 수정, 삭제, 승인, 반려, 팝업창, 파일 첨부, 검색 기능, 결재 종류에 따른 페이지 나누기)<br/>
+- 전자 결재 경영진 페이지 (결재 한 건 보는 페이지, 수정, 삭제, 승인, 반려, 팝업창, 파일 첨부, 검색 기능, 결재 종류에 따른 페이지 나누기)<br/>
+1. 전자 결재 반려 사유 입력<br/>
+  <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/3533ae59-1dd6-481f-b445-20420cf49ebc"/><br/>
+2. 전자 결재 반려 사유 수정<br/>
+  <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/5b2b2700-1651-4b28-8a8d-83aad8bac661"/><br/>
+3. 전자 결재 승인<br/>
+  <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/74a61cd7-a031-45f1-94a9-1e3b8a96180e"/><br/>
+4. 전자 결재 종류별 페이지<br/>
+  <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/35fe889e-1a25-4438-a7f7-581f07d4e656"/><br/>
+5. 전자 결재 검색 (결재 종류별, 제목, 내용, 이름)<br/>
+  <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/9b36b44b-26fa-4010-a451-730f2215ca30"/><br/>
 
 
 - 사내 일정 (전체)<br/>
+1. 사내 일정 저장<br/>
 <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/738d7100-0d0c-4dc7-80d7-61cc0ecc87b4"/><br/>
-
+2. 사내 일정 수정<br/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/054d1c1e-6b0e-450e-9723-eecba4da6c64"/><br/>
+3. 사내 일정 삭제<br/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ef94938e-773c-4db8-8485-e7fbdade0eb5"/><br/>
+4. 사내 일정 달력 검색 및 날짜 넘기기<br/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ae5d3ff8-4508-49c3-852a-95197936503b"/><br/>
 
 - 메인 (행사 사진, 공지사항, 사내 일정)<br/>
 
