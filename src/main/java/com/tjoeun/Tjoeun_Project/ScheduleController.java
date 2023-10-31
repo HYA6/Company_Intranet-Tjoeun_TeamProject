@@ -35,9 +35,8 @@ public class ScheduleController {
 		
 		Calendar cal = Calendar.getInstance();
 		CalendarVO calendarData;
-		String holiday = ""; // 공휴일
 		
-		logger.info("calendarVO: {}", calendarVO);
+//		logger.info("calendarVO: {}", calendarVO);
 		
 //		logger.info("현재 년도: {}", String.valueOf(cal.get(Calendar.YEAR)));
 //		logger.info("현재 달: {}", String.valueOf(cal.get(Calendar.MONTH)+1));
@@ -60,6 +59,7 @@ public class ScheduleController {
 		
 		// 실질적인 달력 데이터 리스트에 데이터 삽입 시작.
 		// 일단 시작 인덱스까지 아무것도 없는 데이터 삽입
+		logger.info("today_info.get(\"start\"): {}", today_info.get("start"));
 		for(int i=1; i<=today_info.get("start"); i++){
 			calendarData = new CalendarVO(null, null, null, null, null, null);
 			dateList.add(calendarData);
@@ -69,18 +69,18 @@ public class ScheduleController {
 		// 행 => 달력 일자 수
 		// 열 => 스케줄 저장할 수 있는 개수
 		ScheduleDto[][] schedule_data_arr = new ScheduleDto[32][4]; 
-		if(dateList.isEmpty()!=true){
+		if(dateList.isEmpty()!=true || today_info.get("start") == 0){
 			int j = 0;
 			for(int i=0; i<Schedule_list.size(); i++){
 				// 현재 스케줄 날짜(일)
 				int date = Integer.parseInt(String.valueOf(Schedule_list.get(i).getSchedule_date()).substring(String.valueOf(Schedule_list.get(i).getSchedule_date()).length()-2,
 						String.valueOf(Schedule_list.get(i).getSchedule_date()).length()));
-//				logger.info("{}", date);
+				logger.info("date: {}", date);
 				if(i>0){ // 두번째 스케줄부터 순서대로 저장
 					// 이전 스케줄 날짜
 					int date_before = Integer.parseInt(String.valueOf(Schedule_list.get(i-1).getSchedule_date()).substring(String.valueOf(Schedule_list.get(i-1).getSchedule_date()).length()-2,
 							String.valueOf(Schedule_list.get(i-1).getSchedule_date()).length()));
-//					logger.info("{}", date_before);
+					logger.info("date_before: {}", date_before);
 					if(date_before==date){ // 이전 스케줄과 날짜가 같으면 다음 인덱스에 저장
 						j=j+1;
 						schedule_data_arr[date][j] = Schedule_list.get(i);
@@ -105,7 +105,7 @@ public class ScheduleController {
 			sum += i;
 			int day = sum % 7;
 //			logger.info("{}", day);
-			
+			String holiday = ""; // 공휴일
 			// 공휴일인지 아닌지
 			if ((month == 1 && i == 1) || (month == 3 && i == 1) || (month == 5 && i == 1) || (month == 5 && i == 5) || (month == 5 && i == 27) || 
 				(month == 6 && i == 6) || (month == 8 && i == 15) || (month == 10 && i == 3) || (month == 10 && i == 9) || (month == 12 && i == 25)) {
@@ -150,14 +150,13 @@ public class ScheduleController {
 				(month == 10 && i == 4 && day == 1) || (month == 10 && i == 5 && day == 1) || // 개천절
 				(month == 10 && i == 10 && day == 1) || (month == 10 && i == 11 && day == 1) || // 한글날
 				(month == 12 && i == 26 && day == 1) || (month == 12 && i == 27 && day == 1)) { // 크리스마스
-					logger.info("{}", month);
-					logger.info("{}", i);
-					logger.info("{}", day);
+//					logger.info("{}", month);
+//					logger.info("{}", i);
+//					logger.info("{}", day);
 					calendarData = new CalendarVO(String.valueOf(calendarVO.getYear()), 
 							String.valueOf(calendarVO.getMonth()), String.valueOf(i), 
 							"holiday", "대체공휴일", schedule_data_arr2);
 			}
-			
 			dateList.add(calendarData);
 		}
 		
@@ -171,7 +170,7 @@ public class ScheduleController {
 			}
 		}
 		System.out.println(dateList);
-		System.out.println(today_info);
+//		System.out.println(today_info);
 		
 		// 배열에 담음
 		model.addAttribute("dateList", dateList); // 날짜 데이터 배열

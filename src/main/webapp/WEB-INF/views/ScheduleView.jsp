@@ -202,12 +202,12 @@
 	.schudule_button_tr .schudule_select1 { /* 스케줄 날짜 선택1 */
 		width: 7em;
 		height: 2em;
-		display: inline;
+		display: inline-block;
 	}
 	.schudule_button_tr .schudule_select2 { /* 스케줄 날짜 선택2 */
-		width: 5em;
+		width: 5.5em;
 		height: 2em;
-		display: inline;
+		display: inline-block;
 	}
 	.schudule_button_tr .schudule_select_button { /* 스케줄 날짜 보기 버튼 */
 		width: 50px;

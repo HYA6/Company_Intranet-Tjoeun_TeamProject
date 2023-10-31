@@ -63,9 +63,9 @@
 							<th>반려 사유 입력</th>
 						</tr>
 						<tr style="border-top: none; border-bottom: none;">
-							<td style="width: 550px;">
+							<td>
 								<textarea id="reason" name="reason"
-									style="width: 95%; height: 200px; resize: none; padding: 5px;">${co.reason}</textarea>
+									style="height: 150px; resize: none; padding: 5px;">${co.reason}</textarea>
 							</td>
 						</tr>
 						<tr class="actions" style="border-top: none; border-bottom: none;">

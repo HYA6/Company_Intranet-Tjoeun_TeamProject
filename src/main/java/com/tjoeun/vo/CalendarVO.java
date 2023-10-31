@@ -114,10 +114,10 @@ public class CalendarVO {
 		
 		// 날짜 관련
 //		System.out.println("search_month : " + search_month); // 현재 전달
-		System.out.println("현재 달의 첫째날: " + startDay + ", 현재 달의 마지막날: " + endDay + 
-				", 현재 달의 첫요일: " + start + ", 현재 년도: " + today_year + ", 현재 월: " + 
-				today_month + ", 컨트롤러에서 넘겨받은 년도: " + search_year + 
-				", 컨트롤러에서 넘겨받은 월: " + search_month + ", 오늘 날짜: " + today);
+//		System.out.println("현재 달의 첫째날: " + startDay + ", 현재 달의 마지막날: " + endDay + 
+//				", 현재 달의 첫요일: " + start + ", 현재 년도: " + today_year + ", 현재 월: " + 
+//				today_month + ", 컨트롤러에서 넘겨받은 년도: " + search_year + 
+//				", 컨트롤러에서 넘겨받은 월: " + search_month + ", 오늘 날짜: " + today);
 		// 캘린더 함수 end
 		today_Data.put("start", start); // 첫번째 날 요일
 		today_Data.put("startDay", startDay); // 첫번째 날(일)

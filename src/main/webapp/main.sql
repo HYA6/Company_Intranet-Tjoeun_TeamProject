@@ -44,6 +44,17 @@ INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, d
 VALUES (220, '유종우', '171013', '경영진', '사장', 'j@a', '010-1234-4566', '800714', 15, '1234');
 
 INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
+VALUES (120, '인사팀', '230523', '인사', '팀장', 'a@a', '010-2906-0775', '000106', 15, '1234');
+INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
+VALUES (121, '식당 운영팀', '230312', '식당 운영', '팀장', 'b@a', '010-8928-9488', '000303', 15, '1234');
+INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
+VALUES (122, '총무팀', '230118', '총무', '팀장', 'c@a', '010-2468-3151', '990608', 15, '1234');
+INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
+VALUES (123, 'IT 개발팀',  '220119', 'IT 개발', '팀장', 'd@a', '010-5044-1868', '901007', 15, '1234');
+INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
+VALUES (230, '경영진', '171013', '경영진', '사장', 'j@a', '010-1234-4566', '800714', 15, '1234');
+
+INSERT INTO main (cnum, name, joiningdate, team, role, email, phone, birthday, dayoff, password) 
 VALUES (200, '관리자', '221222', '경영진', 'ADMIN', 'j@a', '010-1111-1111', '000000', 15, '1234');
 SELECT * FROM main WHERE team = '총무';
 
