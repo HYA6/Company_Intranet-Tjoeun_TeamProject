@@ -99,6 +99,7 @@
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ef94938e-773c-4db8-8485-e7fbdade0eb5" width="600"/><br/>
   * 사내 일정 달력 검색 및 날짜 넘기기<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ae5d3ff8-4508-49c3-852a-95197936503b" width="600"/><br/>
+  * 공휴일 및 대체 공휴일 설정<br/>
 
 - ### 메인 페이지
 
