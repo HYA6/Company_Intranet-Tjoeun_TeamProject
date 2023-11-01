@@ -1,4 +1,4 @@
-# Company Intranet Project
+# 🏙 Company Intranet Project 
 
 ## 📔 목차
 * 📃 [프로젝트 개요](#-프로젝트-개요)
