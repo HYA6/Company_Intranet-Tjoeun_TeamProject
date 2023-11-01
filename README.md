@@ -12,7 +12,10 @@
 
   * 2023.06.28 ~ 2023.09.19 <br/>
 
-<h3>사용한 기술</h3>
+목차
+ 1. [사용한 기술](###사용한-기술)
+
+### 사용한 기술
 
   * <b>BACK-END</b><br/>
       * Java, Spring Framework, MyBatis, Ajax, Maven
