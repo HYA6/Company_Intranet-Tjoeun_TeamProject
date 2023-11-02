@@ -80,13 +80,13 @@
   * 전자 결재 반려 사유 입력<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/3533ae59-1dd6-481f-b445-20420cf49ebc"/><br/>
   * 전자 결재 반려 사유 수정<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/5b2b2700-1651-4b28-8a8d-83aad8bac661"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/868f0c0d-ed16-44fe-aca5-099037bea49c"/><br/>
   * 전자 결재 승인<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/74a61cd7-a031-45f1-94a9-1e3b8a96180e"/><br/>
   * 전자 결재 종류별 페이지<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/35fe889e-1a25-4438-a7f7-581f07d4e656"/><br/>
   * 전자 결재 검색 (결재 종류별, 제목, 내용, 이름)<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/9b36b44b-26fa-4010-a451-730f2215ca30"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/9cefd3cc-58f2-4467-b869-57c7631c5171"/><br/>
   * 전자 결재 작성, 수정, 삭제
   * 파일 첨부
 
