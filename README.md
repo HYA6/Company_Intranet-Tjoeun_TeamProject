@@ -78,13 +78,13 @@
 
 - ### 전자 결재 경영진 페이지
   * 전자 결재 반려 사유 입력<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/3533ae59-1dd6-481f-b445-20420cf49ebc" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/3533ae59-1dd6-481f-b445-20420cf49ebc"/><br/>
   * 전자 결재 반려 사유 수정<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/5b2b2700-1651-4b28-8a8d-83aad8bac661"/><br/>
   * 전자 결재 승인<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/74a61cd7-a031-45f1-94a9-1e3b8a96180e" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/74a61cd7-a031-45f1-94a9-1e3b8a96180e"/><br/>
   * 전자 결재 종류별 페이지<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/35fe889e-1a25-4438-a7f7-581f07d4e656" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/35fe889e-1a25-4438-a7f7-581f07d4e656"/><br/>
   * 전자 결재 검색 (결재 종류별, 제목, 내용, 이름)<br/>
     <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/9b36b44b-26fa-4010-a451-730f2215ca30"/><br/>
   * 전자 결재 작성, 수정, 삭제
@@ -92,30 +92,30 @@
 
 - ### 사내 일정
   * 사내 일정 저장<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/738d7100-0d0c-4dc7-80d7-61cc0ecc87b4" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/738d7100-0d0c-4dc7-80d7-61cc0ecc87b4"/><br/>
   * 사내 일정 수정<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/054d1c1e-6b0e-450e-9723-eecba4da6c64" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/054d1c1e-6b0e-450e-9723-eecba4da6c64"/><br/>
   * 사내 일정 삭제<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ef94938e-773c-4db8-8485-e7fbdade0eb5" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ef94938e-773c-4db8-8485-e7fbdade0eb5"/><br/>
   * 사내 일정 달력 검색 및 날짜 넘기기<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ae5d3ff8-4508-49c3-852a-95197936503b" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/ae5d3ff8-4508-49c3-852a-95197936503b"/><br/>
   * 공휴일 및 대체 공휴일 설정<br/>
 
 - ### 메인 페이지
   - 행사 사진 넘기기
   - 공지사항 최신글 5개 출력하기
   - 당일의 사내 일정 출력하기<br/>
-  <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/2baf9cd4-a4e2-46aa-9b5e-7d9221242c96" width="600"/><br/>
+  <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/2baf9cd4-a4e2-46aa-9b5e-7d9221242c96"/><br/>
 
 - ### 회의실 예약
   - 모달창에 예약 정보 띄우기
   - 예약되어 있는 시간 비활성화<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/57adea2c-5016-4e7d-a776-2aeae3cf9add" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/57adea2c-5016-4e7d-a776-2aeae3cf9add"/><br/>
 
 - ### 공지사항
   - 주요 공지 글목록에서 맨 위로 띄우기
   - 게시글 목록 띄우기, 게시글 작성 및 수정, 삭제, 페이지 넘김, 작성 시 공지 종류 선택하기 등 전체적인 기능 구현 협력<br/>
-    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/250214f3-2f9e-486a-830a-f67c990f0072" width="600"/><br/>
+    <img src="https://github.com/HYA6/Company_Intranet/assets/130038444/250214f3-2f9e-486a-830a-f67c990f0072"/><br/>
 
 - ### 기타
   - 전자 결재 사원 페이지 : 결재 종류 선택 및 종류별 페이지 나눔, 검색 기능
