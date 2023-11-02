@@ -21,7 +21,7 @@
 <br/>
 
 ## 📃 프로젝트 개요
-<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/2baf9cd4-a4e2-46aa-9b5e-7d9221242c96"/>
+<img src="https://github.com/HYA6/Company_Intranet/assets/130038444/890c55cb-1b8b-43b6-bae8-dfe06749b2ca" width="400"/>
 
 > <b>주제</b> : 사내 인트라넷
 > 
