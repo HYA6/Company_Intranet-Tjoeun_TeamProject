@@ -45,7 +45,7 @@
   * <b>SERVER</b><br/>
       * Tomcat
   * <b>TOOLS & COMMUNICATION</b><br/>
-    * STS Eclipse, Notion, Kakaotalk
+    * STS, Notion, Kakaotalk
 
 <br/>
 
