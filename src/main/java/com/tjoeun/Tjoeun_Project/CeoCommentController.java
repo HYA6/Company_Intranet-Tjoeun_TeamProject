@@ -35,7 +35,7 @@ public class CeoCommentController {
 		
 		// 코멘트를 달 결재글 1건 얻어오는 메소드 호출
 		CeoVO co = mapper.selectByIdxCeoComment(ceoVO);
-		logger.info("co: {}", co);
+//		logger.info("co: {}", co);
 		// 코멘트를 달 결재글 1건이 저장된 VO와 목록창의 현재 페이지, 엔터 지정
 		model.addAttribute("co", co);
 		model.addAttribute("currentPage", request.getParameter("currentPage"));
@@ -50,7 +50,7 @@ public class CeoCommentController {
 		logger.info("CeoCommentController 클래스의 CeoUpdate() 메소드 실행");
 		CeoCommentDAO mapper = sqlSession.getMapper(CeoCommentDAO.class);
 		CeoVO co = mapper.selectByIdxCeoComment(ceoVO);
-		logger.info("co: {}", co);
+//		logger.info("co: {}", co);
 		model.addAttribute("co", co);
 		model.addAttribute("currentPage", request.getParameter("currentPage"));
 		model.addAttribute("enter", "\r\n");
@@ -75,7 +75,7 @@ public class CeoCommentController {
 			dir.mkdirs();
 		}
 		
-		// 업로드되는 파일 정보 수집(2개: file1, file2)
+		// 업로드되는 파일 정보 수집
 		Iterator<String> iterator = request.getFileNames();
 		String uploadFilename = "";
 		MultipartFile multipartFile = null;
